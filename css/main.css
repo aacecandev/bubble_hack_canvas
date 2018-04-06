@@ -1,0 +1,195 @@
+/* body {
+    height: 100%;
+} */
+
+/* ----------------------- TOP-BAR ---------------------*/
+
+#top-bar {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: blue;
+    animation-name: top-bar-animation;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-duration: 3s;
+    z-index: 100;
+    text-align: center;
+}
+
+@keyframes top-bar-animation {
+    0% {
+        height: 500px;
+        background-color: red;
+        padding: 20px 200px;
+    }
+    50% {
+        height: 70px;
+        background-color: blue;
+        padding: 20px 100px;
+    }
+    100% {
+        height: 139px;
+    }
+}
+
+.nav-img {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+
+
+/* ----------------------- GAME ---------------------*/
+
+#game {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    top: 0;
+    padding: 139px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    clip-path: fill-box;
+    overflow: hidden;
+}
+
+/* DIALOG */
+
+.dialog {
+    position: absolute;
+    left: calc(50% - 250px);
+    top: calc(50% - 300px);
+    height: 600px;
+    width: 500px;
+    background-color: #369;
+    border-radius: 30px;
+    border: 2px solid #99f;
+    padding: 20px 50px;
+    color: #fff;
+    text-align: center;
+    display: none;
+    z-index: 200;
+}
+
+.dialog h2 {
+    font-size: 28px;
+    color: #fff;
+    margin: 20px 0 20px;
+}
+
+.btn-start-game {
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(75% - 30px);
+    height: 60px;
+    width: 200px;
+    background-color: #f00;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid #f66;
+    font-size: 28px;
+    line-height: 60px;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px #f99;
+}
+
+.btn-start-game:hover {
+    background-color: #f33;
+}
+
+#start-game {
+    display: block;
+}
+
+/* ASIDE-LEFT */
+
+.aside-left {
+    position: relative;
+    width: 20%;
+    float: left;
+    height: 100%;
+    background-color: red;
+}
+
+/* BOARD */
+
+#canvas {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    border: 2px solid black;
+    cursor: crosshair;
+}
+
+/* ASIDE-RIGHT */
+
+.aside-right {
+    position: relative;
+    width: 20%;
+    float: right;
+    height: 100%;
+    background-color: rgb(219, 29, 102);
+}
+
+/* ----------------------- FOOTER ---------------------*/
+
+#footer-bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    padding: 5px 50px;
+}
+
+.footer-wrapper>div {
+    width: 33%;
+}
+
+.footer-wrapper div:nth-child(2) {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.technologies img {
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.contact-links img {
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+}
